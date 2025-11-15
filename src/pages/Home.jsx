@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
-import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 import '../App.scss';
 
@@ -21,7 +20,7 @@ const Home = () => {
           >
             <div className="absolute inset-0 bg-black/50"></div>
             <div
-              className="relative inset-0 pointer-events-none"
+              className="absolute inset-0 pointer-events-none"
               style={{
                 background: `radial-gradient(150px at ${spotLight.x}px ${spotLight.y}px, rgba(255,255,255,0.50), transparent 60%)`,
               }}
@@ -56,4 +55,3 @@ const Home = () => {
 };
 
 export default Home
-
