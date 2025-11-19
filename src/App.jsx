@@ -37,10 +37,10 @@
 import React, { useRef, useEffect } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
-import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
+import Portfolio from "./pages/Portfolio";
 import Journal from "./pages/Journal";
 import Contact from "./pages/Contact";
 import "./App.scss";
@@ -63,6 +63,7 @@ const App = () => {
       {/* <Navbar /> */}
       <Home />
       <AboutUs />
+      <Portfolio />
       <Services />
       <Journal />
       <Contact />

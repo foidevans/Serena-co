@@ -25,9 +25,12 @@ const Home = () => {
                 background: `radial-gradient(150px at ${spotLight.x}px ${spotLight.y}px, rgba(255,255,255,0.50), transparent 60%)`,
               }}
             ></div>
-
+            {/* <div className="relative z-1">
+                 <Navbar />
+            </div> */}
             <Navbar />
             <hr className='text-white bg-white font-bold' />
+            
             <main className="flex justify-center h-[calc(100vh-80px)] relative m-auto px-10 text-white"> 
               <div className="flex justify-center items-center relative">
               <h1 className="text-7xl font-semibold absolute top-2/9 right-[60%] font-serif">MATERIAL.</h1>
