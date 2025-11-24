@@ -46,14 +46,16 @@ const Portfolio = () => {
     fetchSupabaseData();
   }, []);
 
-  useEffect(() => {
-    console.log("portfolioItems changed:", portfolioItems);
-    console.log("swiperRef current:", swiperRef.current);
+useEffect(() => {
+  if (!portfolioItems.length || !swiperRef.current) return;
 
-    if (portfolioItems.length > 0 && swiperRef.current && !swiperInstance.current) {
-      console.log("Initializing Swiper...");
-      
-      try {
+  // Ensure LocomotiveScroll is initialized
+  const waitForLoco = setInterval(() => {
+    if (window.locoScroll) {
+      clearInterval(waitForLoco);
+
+      // Delay to allow LocoScroll to calculate layout
+      setTimeout(() => {
         swiperInstance.current = new Swiper(swiperRef.current, {
           direction: "horizontal",
           loop: true,
@@ -69,21 +71,25 @@ const Portfolio = () => {
           },
           modules: [Navigation, Pagination],
         });
-        
-        console.log("Swiper initialized successfully");
-      } catch (swiperError) {
-        console.error("Swiper initialization error:", swiperError);
-      }
-    }
 
-    return () => {
-      if (swiperInstance.current) {
-        console.log("Destroying Swiper");
-        swiperInstance.current.destroy();
-        swiperInstance.current = null;
-      }
-    };
-  }, [portfolioItems]);
+        swiperInstance.current.update();
+        swiperInstance.current.updateSize();
+
+        // Trigger LocoScroll refresh
+        window.locoScroll.update();
+      }, 50);
+    }
+  }, 10);
+
+  return () => {
+    clearInterval(waitForLoco);
+    if (swiperInstance.current) {
+      swiperInstance.current.destroy();
+      swiperInstance.current = null;
+    }
+  };
+}, [portfolioItems]);
+
 
   console.log("Current state:", { loading, error, portfolioItemsCount: portfolioItems.length });
 
@@ -107,7 +113,13 @@ const Portfolio = () => {
     <section
       id="services"
       data-scroll-section
-      className="min-h-screen bg-white text-black px-6 py-6"
+    
+  // data-scroll
+  // data-scroll-sticky
+  // data-scroll-target="#services"
+
+      className=" relative min-h-screen bg-white text-black px-6 py-6"
+        // style={{ position: 'sticky', top: 0 }}
     >
       <div className="mb-5">
         <h2 className="text-center text-sm tracking-[0.2em] text-gray-500 uppercase">

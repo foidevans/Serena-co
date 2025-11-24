@@ -1,4 +1,3 @@
-// Ensure proper scrolling with React Router
 html.has-scroll-smooth {
   overflow: hidden;
 }
@@ -15,72 +14,86 @@ html.has-scroll-dragging {
   min-height: 100vh;
 }
 
-// Custom animations for Locomotive Scroll
-[data-scroll-container] {
-  perspective: 1px;
-}
-
-// Reveal animations
-.fade-in-up {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-  transition: all 0.8s ease-out;
-}
-
-.fade-in {
-  opacity: 1 !important;
-  transition: opacity 0.8s ease-out;
-}
-
-.scale-in {
-  opacity: 1 !important;
-  transform: scale(1) !important;
-  transition: all 0.8s ease-out;
-}
-
-// Cover transition styles
-[data-scroll-container].hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-[data-scroll-container].visible {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.3s ease;
-}
-.cover-section {
-  .cover-slide {
-    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    
-    &[data-scroll-sticky] {
-      transform: translateY(-100%);
-    }
-  }
-}
-
-// Custom scrollbar (optional)
-.has-scroll-smooth {
-  .c-scrollbar {
-    width: 6px;
-    
-    .c-scrollbar_thumb {
-      background: linear-gradient(to bottom, #667eea, #764ba2);
-      opacity: 0.8;
-    }
-  }
-}
-
-// Section specific styles
-.hero-section,
-.cover-section,
-.reveal-section,
-.parallax-section,
-.final-section {
+// Cover scroll specific styles
+.cover-scroll-section {
+  position: sticky;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
+  
+  .cover-section {
   position: relative;
+  min-height: 100vh;
+  z-index: 10;
+}
+  // This is the element that will cover the previous section
+  .cover-element {
+    position: relative;
+    z-index: 10;
+    background: white; // or your desired background
+    min-height: 100vh;
+    
+    &[data-scroll] {
+      will-change: transform;
+    }
+  }
 }
 
-// Smooth transitions for all animated elements
-[data-scroll] {
-  transition: all 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+
+// Reset the home section to be non-sticky
+.home-section {
+  position: relative;
+  z-index: 1;
 }
+
+
+
+
+// // Stacking Scroll Effect
+// .stack-container {
+//   position: relative;
+// }
+
+// .stack-section {
+//   height: 100vh;
+//   display: flex;
+//   align-items: center;
+//   padding: 60px 40px;
+// }
+
+// // Sections that get covered (sticky)
+// .sticky-section {
+//   position: sticky;
+//   top: 0;
+// }
+
+// // Sections that do the covering (normal flow)
+// .cover-section {
+//   position: relative;
+//   z-index: 10;
+// }
+
+// // Spacer between sticky and cover sections
+// .stack-spacer {
+//   height: 100vh;
+// }
+
+// // Your existing content styles
+// .section-content {
+//   width: 100%;
+//   color: white;
+//   position: relative;
+// }
+
+
+// // Custom scrollbar (optional)
+// .has-scroll-smooth {
+//   .c-scrollbar {
+//     width: 6px;
+    
+//     .c-scrollbar_thumb {
+//       background: linear-gradient(to bottom, #667eea, #764ba2);
+//       opacity: 0.8;
+//     }
+//   }
+// }

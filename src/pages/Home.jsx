@@ -25,9 +25,7 @@ const Home = () => {
                 background: `radial-gradient(150px at ${spotLight.x}px ${spotLight.y}px, rgba(255,255,255,0.50), transparent 60%)`,
               }}
             ></div>
-            {/* <div className="relative z-1">
-                 <Navbar />
-            </div> */}
+         
             <Navbar />
             <hr className='text-white bg-white font-bold' />
             
@@ -58,3 +56,9 @@ const Home = () => {
 };
 
 export default Home
+
+
+
+
+
+
