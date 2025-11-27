@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Footer = () => {
-  // Define InfiniteScrollText inside Footer component
+
   const InfiniteScrollText = ({ text, speed = 20 }) => {
     return (
       <div className="w-full overflow-hidden bg-green py-3 border-y border-gray-200">
@@ -20,11 +20,11 @@ const Footer = () => {
   };
 
   return (
-    <footer className=' bg-[#ece4ce] py-6'>
+    <footer className=' bg-[#ece4ce] py-6 px-8 '>
 
-      <div className='flex'>
-        <div><h2>SERENA & CO</h2></div>
-        <div className='flex'>
+      <div className='flex justify-between'>
+        <div className='w-[20rem]'><h2>SERENA & CO</h2></div>
+        <div className='flex gap-5'>
           <div><p>MENU</p></div>
           <div>
             <ul className="">
@@ -35,7 +35,7 @@ const Footer = () => {
         </ul>
           </div>
         </div>
-          <div className='flex'>
+          <div className='flex gap-5'>
           <div><p>FOLLOW US</p></div>
           <div>
             <ul className="">
@@ -46,7 +46,7 @@ const Footer = () => {
         </ul>
           </div>
         </div>
-          <div className='flex'>
+          <div className='flex gap-5'>
           <div><p>CONTACT</p></div>
           <div>
             <ul className="">

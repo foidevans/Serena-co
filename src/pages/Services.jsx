@@ -38,7 +38,7 @@ const Services = () => {
   ];
   return (
     <>
-      <section data-scroll-section className="cover-section relative min-h-screen">
+      <section data-scroll-section id= "services" className="cover-section relative min-h-screen">
       <div
         data-scroll
         data-scroll-sticky
@@ -51,13 +51,13 @@ const Services = () => {
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
-        <section className="relative z-10 px-5.5 py-5.5">
+        <section id= "services"className="relative z-10 px-5.5 py-5.5">
        
           <div className="flex justify-between">
           <h2 className="text-sm tracking-[0.2em] text-gray-500 uppercase ">
-            ABOUT US
+            services
           </h2>
-             <p className=" absolute bottom-10 right-0 w-[20rem]">
+             <p className=" absolute bottom-10 right-0 w-[20rem] text-white">
                   Design services crafted for calm, intentional and meaningful
                   living
                 </p>
@@ -66,8 +66,21 @@ const Services = () => {
           <div className="flex flex-wrap">
              <div className="flex flex-1 ">
             <div className="flex flex-col gap-5 flex-1">
-              <h1 className="text-4xl md:text-6xl font-serif text-white leading-tight">
-                DESIGN THAT RESONATES
+              <h1 className="text-4xl md:text-6xl font-serif text-white leading-tight"
+                style={{
+              fontFamily: "'Cormorant Garamond', serif",
+              fontSize: "5rem",
+              letterSpacing: "-2px"
+            }}>
+                DESIGN THAT  <span
+                style={{
+                  fontFamily: "'My Soul', cursive",
+                
+                  fontWeight: "lighter",
+                }}
+              >
+                R
+              </span>ESONATES
               </h1>
               <div className="w-[80%]">
               <p className="text-white text-base leading-relaxed">

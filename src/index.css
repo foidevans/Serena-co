@@ -4,39 +4,21 @@
   will-change: transform;
 }
 
-/* When the section comes into view */
-/* .active-section {
-  transform: translateY(0) !important;
+@media (min-width: 481px) {
+
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+/* Tablets and small laptops (769px - 1024px) */
+@media (min-width: 769px) {
+
 }
 
-.animate-scroll {
-  animation: scroll 20s linear infinite;
-}
- */
+/* Large desktops and high-resolution screens (1025px and up) */
+@media (min-width: 1025px) {
 
-@keyframes marquee {
-  from { transform: translateX(0%); }
-  to { transform: translateX(-100%); }
 }
 
-@keyframes marquee2 {
-  from { transform: translateX(100%); }
-  to { transform: translateX(0%); }
-}
+/* Extra-large screens (1440px and up) */
+@media (min-width: 1440px) {
 
-.animate-marquee {
-  animation: marquee 15s linear infinite;
-}
-
-.animate-marquee2 {
-  animation: marquee2 15s linear infinite;
 }

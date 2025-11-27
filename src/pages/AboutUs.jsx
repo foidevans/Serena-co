@@ -4,13 +4,13 @@ import img2 from '../assets/images/photo_5811932539768212677_y.jpg';
 
 const AboutUs = () => {
   return (
-    <section data-scroll-section className="cover-section relative min-h-screen bg-white">
+    <section data-scroll-section  id="about" className="cover-section relative min-h-screen bg-white">
       
       <div 
         data-scroll 
-        data-scroll-sticky 
       
-        className="cover-slide-fast min-h-screen bg-white z-50 flex flex-col px-8 lg:px-15 "
+      
+        className="cover-slide-fast min-h-screen bg-white z-50 flex flex-col px-8 lg:px-15  "
       >
         <div className="pt-15">
           <h2 className="text-sm tracking-[0.2em] text-gray-500 uppercase">
@@ -21,8 +21,21 @@ const AboutUs = () => {
         <div className='flex items-end justify-between gap-15 flex-1  pb-20'>
           
           <div className="flex flex-col gap-6 flex-1 max-w-[50%]">
-            <h1 className="text-4xl md:text-6xl font-serif text-[#2b1d12] leading-tight">
-              DESIGN WITH INTENTION
+            <h1 className="text-4xl md:text-6xl font-serif text-[#2b1d12] leading-tight"  
+            style={{
+              fontFamily: "'Cormorant Garamond', serif",
+              fontSize: "5rem",
+              letterSpacing: "-2px"
+            }}>
+                 <span
+                style={{
+                  fontFamily: "'My Soul', cursive",
+                
+                  fontWeight: "lighter",
+                }}
+              >
+                D
+              </span> ESIGN WITH INTENTION
             </h1>
             
             <p className="text-gray-600 text-base leading-relaxed ">

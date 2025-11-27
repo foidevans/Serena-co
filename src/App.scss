@@ -1,14 +1,17 @@
-html.has-scroll-smooth {
-  overflow: hidden;
-}
+
+
+
+// html.has-scroll-smooth {
+//   overflow: hidden;
+// }
 
 html.has-scroll-dragging {
   user-select: none;
 }
 
-.has-scroll-smooth body {
-  overflow: hidden;
-}
+// .has-scroll-smooth body {
+//   overflow: hidden;
+// }
 
 .has-scroll-smooth [data-scroll-container] {
   min-height: 100vh;
@@ -16,8 +19,7 @@ html.has-scroll-dragging {
 
 // Cover scroll specific styles
 .cover-scroll-section {
-  position: sticky;
-  top: 0;
+  position: relative;
   min-height: 100vh;
   width: 100%;
   
@@ -48,7 +50,12 @@ html.has-scroll-dragging {
 
 
 
-
+.swiper-button-next-custom,
+.swiper-button-prev-custom {
+  position: static !important;
+  transform: none !important;
+  margin: 0 !important;
+}
 // // Stacking Scroll Effect
 // .stack-container {
 //   position: relative;

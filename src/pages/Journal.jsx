@@ -32,7 +32,7 @@ const Journal = () => {
   return (
     <>
       <section
-        id="services"
+        id="journal"
         data-scroll-section
         className="relative min-h-screen bg-white text-black px-6 py-6"
       >
@@ -40,8 +40,21 @@ const Journal = () => {
           <h2 className="text-center text-sm tracking-[0.2em] text-gray-500 uppercase">
             JOURNAL
           </h2>
-          <h1 className="text-3xl text-center md:text-6xl font-serif text-[#2b1d12] leading-tight mt-4">
-            NOTES FROM THE STUDIO
+          <h1 className="text-3xl text-center md:text-6xl font-serif text-[#2b1d12] leading-tight mt-4"
+           style={{
+              fontFamily: "'Cormorant Garamond', serif",
+              fontSize: "5rem",
+              letterSpacing: "-2px"
+            }}>
+            NOTES FROM THE  <span
+                style={{
+                  fontFamily: "'My Soul', cursive",
+                
+                  fontWeight: "lighter",
+                }}
+              >
+                S
+              </span>TUDIO
           </h1>
 
           <div className="journal-gallery mt-12 max-w-7xl mx-auto">

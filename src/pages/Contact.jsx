@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from "react";
 import Footer from '../components/Footer'
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
   return (
   <>
-   <section data-scroll-section className="cover-section relative  bg-white">
+   <section data-scroll-section id="contact" className="cover-section relative  bg-white">
       
       <div 
         data-scroll 
@@ -21,8 +25,21 @@ const Contact = () => {
         <div className='flex items-start gap-15 flex-1  pb-20'>
           
           <div className="flex flex-col gap-6 flex-1 max-w-[50%] ">
-            <h1 className="text-4xl md:text-6xl font-serif text-[#2b1d12] leading-tight uppercase">
-            Let's begin a conversation
+            <h1 className="text-4xl md:text-6xl font-serif text-[#2b1d12] leading-tight uppercase" 
+              style={{
+              fontFamily: "'Cormorant Garamond', serif",
+              fontSize: "5rem",
+              letterSpacing: "-2px"
+            }}>
+            Let's begin a <span
+                style={{
+                  fontFamily: "'My Soul', cursive",
+                
+                  fontWeight: "lighter",
+                }}
+              >
+                c
+              </span>onversation
             </h1>
             
             <p className="text-gray-600 text-base leading-relaxed ">

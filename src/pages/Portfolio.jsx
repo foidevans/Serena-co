@@ -113,7 +113,7 @@ const Portfolio = () => {
 
   return (
     <section
-      id="services"
+      id="portfolio"
       data-scroll-section
       // data-scroll
       // data-scroll-sticky
@@ -126,8 +126,21 @@ const Portfolio = () => {
         <h2 className="text-center text-sm tracking-[0.2em] text-gray-500 uppercase">
           PORTFOLIO
         </h2>
-        <h1 className="text-3xl text-center md:text-6xl font-serif text-[#2b1d12] leading-tight mt-4">
-          IMPRESSIONS THAT ENDURE
+        <h1 className="text-3xl text-center md:text-6xl font-serif text-[#2b1d12] leading-tight mt-4"   style={{
+              fontFamily: "'Cormorant Garamond', serif",
+              fontSize: "5rem",
+              letterSpacing: "-2px"
+            }}>
+              
+          IMPRESSIONS THAT  <span
+                style={{
+                  fontFamily: "'My Soul', cursive",
+                
+                  fontWeight: "lighter",
+                }}
+              >
+                E 
+              </span>NDURE
         </h1>
       </div>
 
