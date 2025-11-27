@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
-import "locomotive-scroll/dist/locomotive-scroll.css";
 import "../App.scss";
 
 const Home = () => {
   const [spotLight, setSpotLight] = useState({ x: 0, y: 0 });
+  
 
   return (
     <div
@@ -18,19 +18,28 @@ const Home = () => {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: `radial-gradient(150px at ${spotLight.x}px ${spotLight.y}px, rgba(255,255,255,0.5), transparent 60%)`,
+          background: `radial-gradient(150px at ${spotLight.x}px ${spotLight.y}px, rgba(255, 230, 180, 0.25), transparent 75%)`,
         }}
       />
 
       <Navbar />
 
-      <motion.hr
+      {/* <motion.hr
         className="text-white bg-white h-0.5 border-none mx-6"
         style={{ transformOrigin: "left" }}
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.35 }}
+      /> */}
+
+   <motion.div
+   className=" border-t-2 border-t-white border-b-solid w-full h-1.5 relative "
+        style={{ transformOrigin: "left" }}
+        initial={{ scaleX: 0 }}
+        animate={{ scaleX: 1 }}
+        transition={{ duration: 0.7, ease: "easeOut", delay: 0.35 }}
       />
+
 
       <main className="flex justify-center h-[calc(100vh-80px)] relative m-auto px-10 text-white">
         <div className="flex justify-center items-center relative">
@@ -99,12 +108,10 @@ const Home = () => {
                   light-filled enotionally resonant spaces with purpose and
                   depth
                 </p>
-              </div>
-              <div className="flex justify-between pt-7">
+                  <div className="flex justify-between pt-7">
                 <p>GET IN TOUCH</p>
                 <span>&#8594;</span>
               </div>
-            </motion.div>
 
             <motion.hr
               initial={{ width: "0%" }}
@@ -112,6 +119,10 @@ const Home = () => {
               transition={{ duration: 1, delay: 0.8 }}
               style={{ willChange: "transform, opacity" }}
             />
+              </div>
+            
+            </motion.div>
+
           </div>
         </div>
       </main>
