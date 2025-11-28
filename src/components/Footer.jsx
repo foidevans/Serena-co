@@ -20,7 +20,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className=' bg-[#ece4ce] py-6 px-8 '>
+    <footer data-scroll-section className=' bg-[#ece4ce] py-6 px-8 '>
 
       <div className='flex justify-between'>
         <div className='w-[20rem]'><h2>SERENA & CO</h2></div>

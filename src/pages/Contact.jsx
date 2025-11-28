@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Footer from '../components/Footer'
+
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -14,11 +14,10 @@ const Contact = () => {
   }
   return (
   <>
-   <section data-scroll-section id="contact" className="cover-section relative  bg-white">
+   <section data-scroll-section id="contact" className=" relative  bg-white">
       
       <div 
-        data-scroll 
-        data-scroll-sticky 
+   
       
         className="cover-slide-fast min-h-screen z-50 flex flex-col px-8 lg:px-15 "
       >
@@ -28,10 +27,10 @@ const Contact = () => {
           </h2>
         </div>
 
-        <div className='contact-container flex-col lg:flex items-start gap-15 flex-1  pb-20'>
+        <div className='contact-container flex flex-col md:flex-col lg:flex-row xl:flex-row items-start gap-15 flex-1  pb-20'>
           
           <div className=" contact-container-div flex flex-col gap-6 flex-1 min-w-[50%] ">
-            <h1 className=" lg:text-[5rem] md:text-[4rem] text-[2.8rem] text-[#2b1d12] leading-tight uppercase" 
+            <h1 className=" xl:text-[4rem] lg:text-[4rem] md:text-[4rem]  text-[2.8rem] text-[#2b1d12] leading-tight uppercase" 
               style={{
               fontFamily: "'Cormorant Garamond', serif",
               // fontSize: "5rem",
@@ -84,7 +83,7 @@ const Contact = () => {
           </div>
           </div>
 
-          < Footer />
+    
 
           </section>
 

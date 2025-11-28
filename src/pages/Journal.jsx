@@ -40,7 +40,7 @@ const Journal = () => {
           <h2 className=" g:text-sm md:text-sm text-[11px] tracking-[0.2em] text-center text-sm  text-gray-500 uppercase">
             JOURNAL
           </h2>
-          <h1 className="lg:text-[5rem] md:text-[4rem] text-[2.8rem]  text-center font-serif text-[#2b1d12] leading-tight mt-4"
+          <h1 className="xl:text-[4rem] lg:text-[4rem] md:text-[4rem] text-[2.8rem]  text-center font-serif text-[#2b1d12] leading-tight mt-4"
            style={{
               fontFamily: "'Cormorant Garamond', serif",
               letterSpacing: "-2px"

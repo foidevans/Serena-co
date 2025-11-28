@@ -149,7 +149,7 @@ const Portfolio = () => {
         <h2 className="  lg:text-sm md:text-sm text-[11px] text-center tracking-[0.2em] text-gray-500 uppercase">
           PORTFOLIO
         </h2>
-        <h1 className=" lg:text-[5rem] md:text-[4rem] text-[2.8rem] text-center font-serif text-[#2b1d12] leading-tight mt-4"   style={{
+        <h1 className=" xl:text-[4rem] lg:text-[4rem] md:text-[4rem] text-[2.8rem] text-center font-serif text-[#2b1d12] leading-tight mt-4"   style={{
               fontFamily: "'Cormorant Garamond', serif",
               letterSpacing: "-2px"
             }}>
@@ -186,7 +186,7 @@ const Portfolio = () => {
 
                 <div className="flex flex-col justify-between">
                   <div className="flex justify-between items-center">
-                    <p className="text-gray-600 text-sm lg:text-base leading-relaxed ">{item.furniture_timeline || "Timeline not specified"}</p>
+                    <p className="text-gray-600 text-sm lg:text-base md:text-base xl:text-base leading-6">{item.furniture_timeline || "Timeline not specified"}</p>
                     <p className="text-gray-600 text-sm lg:text-base leading-relaxed ">
                       {(index + 1).toString().padStart(2, "0")}/
                       {portfolioItems.length.toString().padStart(2, "0")}
@@ -200,7 +200,7 @@ const Portfolio = () => {
               fontFamily: "'Cormorant Garamond', serif", }}>
                         {item.furniture_name || "Untitled Project"}
                       </h2>
-                      <p className="mt-2 max-w-md text-gray-600 text-sm lg:text-base leading-relaxed ">
+                      <p className="mt-2 max-w-md text-gray-600 text-sm lg:text-base md:text-base xl:text-base leading-6 ">
                         {item.furniture_description ||
                           "No description available"}
                       </p>

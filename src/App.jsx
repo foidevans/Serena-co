@@ -7,6 +7,7 @@ import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Journal from "./pages/Journal";
 import Contact from "./pages/Contact";
+import Footer from './components/Footer';
 import "./App.scss";
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
       <Services />
       <Journal />
       <Contact />
+      <Footer />
     </div>
   );
 };

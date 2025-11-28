@@ -52,11 +52,11 @@ const Services = () => {
         <section id= "services"className="relative z-10 px-5.5 py-5.5">
        
           <div className="flex justify-between">
-          <h2 className=" lg:text-sm md:text-sm text-[11px] tracking-[0.2em] text-gray-500 uppercase ">
+          <h2 className="  lg:text-sm md:text-sm text-[11px] tracking-[0.2em] text-gray-500 uppercase ">
             services
           </h2>
-             <p className=" service-text absolute bottom-10 right-0 w-[20rem] text-white">
-                  Design services crafted for calm, intentional and meaningful
+             <p className=" text-sm service-text absolute bottom-10 -right-6 w-[20rem] text-white">
+                  Design services crafted for calm,<br /> intentional and meaningful
                   living
                 </p>
         
@@ -64,7 +64,7 @@ const Services = () => {
           <div className=" service-container flex">
              <div className="flex flex-1 ">
             <div className="flex flex-col gap-5 flex-1">
-              <h1 className="lg:text-[5rem] md:text-[4rem] text-[3rem]  text-white leading-tight"
+              <h1 className=" xl:text-[4rem] lg:text-[4rem] md:text-[4rem] text-[3rem]   text-white leading-tight"
                 style={{
               fontFamily: "'Cormorant Garamond', serif",
               letterSpacing: "-2px"
@@ -80,8 +80,8 @@ const Services = () => {
               </span>ESONATES
               </h1>
               {/* do not forget medium screens */}
-              <div className="lg:w-[80%] md:w-[70%]"> 
-              <p className="text-white text-sm lg:text-base leading-relaxed">
+              <div className=" lg:w-[80%] md:w-[70%] xl:w-[90%]"> 
+              <p className="text-white text-sm leading-relaxed">
                 At Serena & co, we believe that interior design is not just
                 about how a space looks – it's about how it makes you feel. We
                 approach each project as a layered composition of light, form,
@@ -89,7 +89,7 @@ const Services = () => {
               </p>
               </div>
 
-              <button className="my-4 w-fit border-b border-[#2b1d12] text-white font-medium tracking-wide hover:text-[#a67b5b] hover:border-[#a67b5b] transition-all duration-300">
+              <button className="my-4 xl:my-2 w-fit border-b border-[#2b1d12] text-white font-medium tracking-wide hover:text-[#a67b5b] hover:border-[#a67b5b] transition-all duration-300">
                 LEARN MORE →
               </button>
             </div>
@@ -97,7 +97,7 @@ const Services = () => {
             <div className="service-div-container flex-1 flex flex-col items-end">
             <div className="service-div flex gap-2.5">
 
-              <div className=" bg-white w-[300px] h-[350px] flex flex-col p-4">
+              <div className=" bg-white w-[300px] h-[340px] flex flex-col p-4">
                  <span className="text-xs text-gray-400 mb-4">01</span>
                 <div className="w-40 h-40 self-end ">
                   <img
@@ -108,14 +108,14 @@ const Services = () => {
                   />
                 </div>
 
-                <h3 className=" text-2xl font-bold mt-3  text-[#2b1d12] "
+                <h3 className=" text-xl font-bold mt-3  text-[#2b1d12] "
                 style={{
               fontFamily: "'Cormorant Garamond', serif",
             }}>{designCards[0].name}</h3>
-                <p className="mt-2 max-w-md text-gray-600 text-sm lg:text-base leading-5">{designCards[0].description}</p>
+                <p className="mt-2 max-w-md text-gray-600 text-sm leading-5">{designCards[0].description}</p>
               </div>
 
-              <div className=" bg-white w-[300px] h-[350px] flex flex-col p-4">
+              <div className=" bg-white w-[300px] h-[340px]  flex flex-col p-4">
                  <span className="text-xs text-gray-400 mb-4">02</span>
                 <div className="w-40 h-40 self-end">
                   <img
@@ -126,17 +126,17 @@ const Services = () => {
                   />
                 </div>
 
-                <h3 className= "text-2xl font-bold mt-3  text-[#2b1d12]"
+                <h3 className= "text-xl font-bold mt-3  text-[#2b1d12]"
                  style={{
               fontFamily: "'Cormorant Garamond', serif",
             }}
                 >{designCards[1].name}</h3>
-                <p className="mt-2 max-w-md text-gray-600 text-sm lg:text-base leading-5">{designCards[1].description}</p>
+                <p className="mt-2 max-w-md text-gray-600 text-sm leading-5">{designCards[1].description}</p>
               </div>
             </div>
 
               <div className=" service-div flex gap-2.5 mt-3">
-                <div className=" bg-white w-[300px] h-[350px] flex flex-col p-4">
+                <div className=" bg-white w-[300px] h-[340px]  flex flex-col p-4">
                    <span className="text-xs text-gray-400 mb-4">03</span>
                 <div className="w-40 h-40 self-end ">
                   <img
@@ -147,16 +147,16 @@ const Services = () => {
                   />
                 </div>
 
-                <h3 className="text-2xl font-bold mt-3  text-[#2b1d12]"
+                <h3 className="text-xl font-bold mt-3  text-[#2b1d12]"
                                  style={{
               fontFamily: "'Cormorant Garamond', serif",
             }}
                
                 >{designCards[2].name}</h3>
-                <p className="mt-2 max-w-md text-gray-600 text-sm lg:text-base leading-5">{designCards[2].description}</p>
+                <p className="mt-2 max-w-md text-gray-600 text-sm leading-5">{designCards[2].description}</p>
               </div>
 
-                <div className="bg-white w-[300px] h-[350px] flex flex-col p-4 lg:mr-78">
+                <div className="bg-white w-[300px] h-[340px]  flex flex-col p-4 lg:mr-78">
                    <span className="text-xs text-gray-400 mb-4">04</span>
                 <div className="w-40 h-40 self-end ">
                   <img
@@ -167,12 +167,12 @@ const Services = () => {
                   />
                 </div>
 
-                <h3 className="text-2xl font-bold mt-3  text-[#2b1d12]"
+                <h3 className="text-xl font-bold mt-3  text-[#2b1d12]"
                  style={{
               fontFamily: "'Cormorant Garamond', serif",
             }}
                 >{designCards[3].name}</h3>
-                <p className="mt-2 max-w-md text-gray-600 text-sm lg:text-base leading-5">{designCards[3].description}</p>
+                <p className="mt-2 max-w-md text-gray-600 text-sm leading-5">{designCards[3].description}</p>
               </div>
               
           

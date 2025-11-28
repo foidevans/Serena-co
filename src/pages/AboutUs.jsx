@@ -21,7 +21,7 @@ const AboutUs = () => {
         <div className=' lg:flex-row flex flex-col lg:items-end justify-between gap-15 flex-1 pb-20'>
           
           <div className="flex flex-col gap-6 flex-1 lg:max-w-[50%]">
-            <h1 className="lg:text-[5rem] md:text-[4rem] text-[3rem]  text-[#2b1d12] leading-tight"  
+            <h1 className="xl:text-[4rem] lg:text-[4rem] md:text-[4rem] text-[3rem]  text-[#2b1d12] leading-tight"  
             style={{
               fontFamily: "'Cormorant Garamond', serif",
               letterSpacing: "-2px"
@@ -37,7 +37,7 @@ const AboutUs = () => {
               </span> ESIGN WITH INTENTION
             </h1>
             
-            <p className="text-gray-600 text-sm lg:text-base leading-relaxed ">
+            <p className="text-gray-600 text-sm lg:text-base xl:text-base md:text-base leading-relaxed ">
               At Serena & co, we believe that interior design is not just about how a
               space looks – it's about how it makes you feel. We approach each
               project as a layered composition of light, form, and purpose, where
