@@ -30,7 +30,7 @@ const Navbar = () => {
     <header className="flex items-center justify-between px-4 py-1 md:py-2 md:px-6 lg:px-6 lg:py-4 text-white relative z-50">
   
       <motion.h2
-        className="font-bold lg:text-xl"
+        className="font-bold  md:text-sm lg:[1rem] xl:text-xl"
         initial={{ y: 12, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
@@ -96,7 +96,7 @@ const Navbar = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0 }}
-          className="absolute top-full left-0 w-full bg-black/80 backdrop-blur-sm py-6 flex flex-col items-center gap-6 text-lg font-semibold md:hidden"
+          className="absolute top-full left-0 w-full bg-black/80 backdrop-blur-sm py-6 flex flex-col items-center gap-6 text-sm font-semibold md:hidden"
         >
           {[ 
             { label: "ABOUT US", id: "#about" },

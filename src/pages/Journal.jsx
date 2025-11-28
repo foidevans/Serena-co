@@ -57,23 +57,23 @@ const Journal = () => {
           </h1>
 
           <div className="journal-gallery mt-12 max-w-7xl mx-auto">
-            <div className=" grid grid-cols-9 grid-rows-7 gap-4 h-[80vh] ">
-                {/* <div
+            {/* <div className=" grid grid-cols-9 grid-rows-7 gap-4 h-[80vh] "> */}
+                <div
     className="
       grid gap-4 h-[80vh]
       grid-cols-1 
       sm:grid-cols-2
       lg:grid-cols-9 lg:grid-rows-7
     "
-  > */}
+  >
 
               {/* First image: col 1-4, row 1-4 */}
-              <div className="col-start-1 col-end-4 row-start-1 row-end-7 relative group overflow-hidden cursor-pointer">
-              {/* <div className="
+              {/* <div className="col-start-1 col-end-4 row-start-1 row-end-7 relative group overflow-hidden cursor-pointer"> */}
+              <div className="
   lg:col-start-1 lg:col-end-4 
   lg:row-start-1 lg:row-end-7 
   relative group overflow-hidden cursor-pointer
-"> */}
+">
                 <img 
                   src={articles[0].image} 
                   alt={articles[0].title}
@@ -96,12 +96,12 @@ const Journal = () => {
               </div>
 
               {/* Second image: col 4-6, row 1-3 */}
-              <div className="col-start-4 col-end-6 row-start-1 row-end-5 relative group overflow-hidden cursor-pointer">
-              {/* <div className="
+              {/* <div className="col-start-4 col-end-6 row-start-1 row-end-5 relative group overflow-hidden cursor-pointer"> */}
+              <div className="
   lg:col-start-4 lg:col-end-6 
   lg:row-start-1 lg:row-end-5
   relative group overflow-hidden cursor-pointer
-"> */}
+">
                 <img 
                   src={articles[1].image} 
                   alt={articles[1].title}
@@ -125,12 +125,12 @@ const Journal = () => {
               </div>
 
               {/* Third image: col 6-8, row 2-4 */}
-              <div className="col-start-6 col-end-8 row-start-3 row-end-7 relative group overflow-hidden cursor-pointer">
-              {/* <div className="
+              {/* <div className="col-start-6 col-end-8 row-start-3 row-end-7 relative group overflow-hidden cursor-pointer"> */}
+              <div className="
   lg:col-start-6 lg:col-end-8 
   lg:row-start-3 lg:row-end-7
   relative group overflow-hidden cursor-pointer
-"> */}
+">
                 <img 
                   src={articles[2].image} 
                   alt={articles[2].title}
@@ -154,12 +154,12 @@ const Journal = () => {
               </div>
 
               {/* Fourth image: col 8-10, row 1-3 */}
-              <div className="col-start-8 col-end-10 row-start-1 row-end-5 relative group overflow-hidden cursor-pointer">
-              {/* <div className="
+              {/* <div className="col-start-8 col-end-10 row-start-1 row-end-5 relative group overflow-hidden cursor-pointer"> */}
+              <div className="
   lg:col-start-8 lg:col-end-10 
   lg:row-start-1 lg:row-end-5
   relative group overflow-hidden cursor-pointer
-"> */}
+">
                 <img 
                   src={articles[3].image} 
                   alt={articles[3].title}

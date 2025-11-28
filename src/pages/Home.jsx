@@ -35,7 +35,7 @@ const Home = () => {
       <main className="flex justify-center h-[calc(100vh-80px)] relative m-auto px-10 text-white">
         <div className="flex justify-center items-center relative">
           <motion.h1
-            className=" materialText text-4xl md:text-5xl lg:text-[5rem] font-semibold  absolute top-2/9 right-[60%] font-serif "
+          className=" materialText text-4xl md:text-5xl lg:text-[5rem] xl:text-[5rem] font-semibold absolute -right-6 font-serif "
             initial={{ y: -80, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
@@ -91,13 +91,13 @@ const Home = () => {
               style={{ willChange: "transform, opacity" }}
             >
               <div className="w-68 pt-3.5">
-                <p className=" text-xs md:text-sm lg:text-base ">
+                <p className=" text-xs sm:text-sm ">
                   Serena & Co is a boutique interior design studio creating
                   light-filled enotionally resonant spaces with purpose and
                   depth
                 </p>
                 <div className="flex justify-between pt-7">
-                  <p className=" text-xs md:text-sm lg:text-base">
+                  <p className="text-xs sm:text-sm font-semibold">
                     GET IN TOUCH
                   </p>
                   <span>&#8594;</span>
