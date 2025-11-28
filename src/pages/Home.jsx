@@ -6,6 +6,20 @@ import "../index.css";
 
 const Home = () => {
   const [spotLight, setSpotLight] = useState({ x: 0, y: 0 });
+  const handleScroll = (e, target) => {
+    e.preventDefault();
+    const el = document.querySelector(target);
+
+    if (el && window.locoScroll) {
+      window.locoScroll.scrollTo(el, {
+        offset: 0,
+        duration: 300,
+        easing: [0.6, 0.0, 0.4, 1],
+      });
+
+      setTimeout(() => window.locoScroll.update(), 900);
+    }
+  };
 
   return (
     <div
@@ -98,8 +112,9 @@ const Home = () => {
                 </p>
                 <div className="flex justify-between pt-7">
                   <p className="text-xs sm:text-sm font-semibold">
-                    GET IN TOUCH
+                    <a href="#contact" onClick={(e) => handleScroll(e, "#contact")}>GET IN TOUCH</a>
                   </p>
+               
                   <span>&#8594;</span>
                 </div>
 
