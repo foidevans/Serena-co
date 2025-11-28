@@ -38,10 +38,8 @@ const Services = () => {
   ];
   return (
     <>
-      <section data-scroll-section id= "services" className="cover-section relative min-h-screen">
+      <section data-scroll-section id= "services" className=" relative min-h-screen">
       <div
-        data-scroll
-        data-scroll-sticky
       
         className="cover-scroll-section relative min-h-screen bg-cover bg-center bg-no-repeat"
         style={{
@@ -64,9 +62,9 @@ const Services = () => {
         
 </div>
           <div className=" service-container flex">
-             <div className="flex flex-1 ">
+             <div className="flex flex-1 bg-amber-800 ">
             <div className="flex flex-col gap-5 flex-1">
-              <h1 className="lg:text-[4rem] md:text-[4rem] text-[3rem]  text-white leading-tight"
+              <h1 className="lg:text-[5rem] md:text-[4rem] text-[3rem]  text-white leading-tight"
                 style={{
               fontFamily: "'Cormorant Garamond', serif",
               letterSpacing: "-2px"
