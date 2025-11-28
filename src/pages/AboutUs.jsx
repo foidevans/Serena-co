@@ -18,7 +18,7 @@ const AboutUs = () => {
           </h2>
         </div>
 
-        <div className=' lg:flex  flex-col lg:items-end justify-between gap-15 flex-1 pb-20'>
+        <div className=' lg:flex-row flex flex-col lg:items-end justify-between gap-15 flex-1 pb-20'>
           
           <div className="flex flex-col gap-6 flex-1 lg:max-w-[50%]">
             <h1 className="lg:text-[5rem] md:text-[4rem] text-[3rem]  text-[#2b1d12] leading-tight"  

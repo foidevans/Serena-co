@@ -167,9 +167,9 @@ html.has-scroll-dragging {
 /* Tablets and small laptops (769px - 1024px) */
 @media (min-width: 769px) {
   .service-container {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
 }
 
 .service-text {

@@ -63,7 +63,7 @@ const Services = () => {
                 </p>
         
 </div>
-          <div className=" service-container flex">
+          <div className=" service-container flex flex-wrap">
              <div className="flex flex-1 ">
             <div className="flex flex-col gap-5 flex-1">
               <h1 className="lg:text-[5rem] md:text-[4rem] text-[3rem]  text-white leading-tight"
