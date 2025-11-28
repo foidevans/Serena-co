@@ -10,21 +10,20 @@ const AboutUs = () => {
         data-scroll 
       
       
-        className="cover-slide-fast min-h-screen bg-white z-50 flex flex-col px-8 lg:px-15  "
+        className="cover-slide-fast min-h-screen bg-white z-50 flex flex-col px-6 lg:px-15  "
       >
         <div className="pt-15">
-          <h2 className="text-sm tracking-[0.2em] text-gray-500 uppercase">
+          <h2 className=" lg:text-sm md:text-sm text-[11px] tracking-[0.2em] text-gray-500 uppercase">
             About us
           </h2>
         </div>
 
-        <div className='flex items-end justify-between gap-15 flex-1  pb-20'>
+        <div className=' lg:flex  flex-col lg:items-end justify-between gap-15 flex-1 pb-20'>
           
-          <div className="flex flex-col gap-6 flex-1 max-w-[50%]">
-            <h1 className="text-4xl md:text-6xl font-serif text-[#2b1d12] leading-tight"  
+          <div className="flex flex-col gap-6 flex-1 lg:max-w-[50%]">
+            <h1 className="lg:text-[5rem] md:text-[4rem] text-[3rem]  text-[#2b1d12] leading-tight"  
             style={{
               fontFamily: "'Cormorant Garamond', serif",
-              fontSize: "5rem",
               letterSpacing: "-2px"
             }}>
                  <span
@@ -38,14 +37,14 @@ const AboutUs = () => {
               </span> ESIGN WITH INTENTION
             </h1>
             
-            <p className="text-gray-600 text-base leading-relaxed ">
+            <p className="text-gray-600 text-sm lg:text-base leading-relaxed ">
               At Serena & co, we believe that interior design is not just about how a
               space looks – it's about how it makes you feel. We approach each
               project as a layered composition of light, form, and purpose, where
               clarity meets quiet beauty.
             </p>
 
-            <button className="mt-4 w-fit border-b border-[#2b1d12] text-[#2b1d12] font-medium tracking-wide hover:text-[#a67b5b] hover:border-[#a67b5b] transition-all duration-300">
+            <button className="my-4 w-fit border-b border-[#2b1d12] text-[#2b1d12] font-medium tracking-wide hover:text-[#a67b5b] hover:border-[#a67b5b] transition-all duration-300">
               LEARN MORE →
             </button>
           </div>

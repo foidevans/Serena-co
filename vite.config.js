@@ -4,6 +4,12 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(),  tailwindcss(),],
+  plugins: [react(),  tailwindcss(),], 
+    server: {
+    host: true, // allows access from any IP / public host
+    allowedHosts: ['.ngrok-free.dev'], // allow ngrok URLs
+    port: 5173, // your dev server port
+  },
+
     
 })

@@ -27,10 +27,10 @@ const Navbar = () => {
   };
 
   return (
-    <header className="flex items-center justify-between px-6 py-4 text-white relative z-50">
+    <header className="flex items-center justify-between px-4 py-1 md:py-2 md:px-6 lg:px-6 lg:py-4 text-white relative z-50">
   
       <motion.h2
-        className="font-bold text-xl"
+        className="font-bold lg:text-xl"
         initial={{ y: 12, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
@@ -87,7 +87,7 @@ const Navbar = () => {
 
 
       <div className="md:hidden z-50">
-        <Hamburger toggled={isOpen} toggle={setOpen} size={25} />
+        <Hamburger toggled={isOpen} toggle={setOpen} size={23} />
       </div>
 
 

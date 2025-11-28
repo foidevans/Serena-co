@@ -55,8 +55,8 @@ const Portfolio = () => {
           swiperInstance.current = new Swiper(swiperRef.current, {
             direction: "horizontal",
             loop: true,
-            slidesPerView: 1,
-            spaceBetween: 30,
+            slidesPerView: 1.1,
+            spaceBetween: 15,
             pagination: {
               el: ".swiper-pagination",
               clickable: true,
@@ -66,6 +66,29 @@ const Portfolio = () => {
               prevEl: ".custom prev",
             },
             modules: [Navigation, Pagination],
+            breakpoints: {
+    // Mobile (default above, but you can also define it here)
+    320: {
+      slidesPerView: 1.1,
+      spaceBetween: 15,
+    },
+    // Tablets
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    }, 
+
+        // Desktop
+    1024: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    // Large desktop
+    1280: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },}
+
           });
 
           swiperInstance.current.update();
@@ -123,12 +146,11 @@ const Portfolio = () => {
       // style={{ position: 'sticky', top: 0 }}
     >
       <div className="mb-5">
-        <h2 className="text-center text-sm tracking-[0.2em] text-gray-500 uppercase">
+        <h2 className="  lg:text-sm md:text-sm text-[11px] text-center tracking-[0.2em] text-gray-500 uppercase">
           PORTFOLIO
         </h2>
-        <h1 className="text-3xl text-center md:text-6xl font-serif text-[#2b1d12] leading-tight mt-4"   style={{
+        <h1 className=" lg:text-[5rem] md:text-[4rem] text-[2.8rem] text-center font-serif text-[#2b1d12] leading-tight mt-4"   style={{
               fontFamily: "'Cormorant Garamond', serif",
-              fontSize: "5rem",
               letterSpacing: "-2px"
             }}>
               
@@ -150,7 +172,7 @@ const Portfolio = () => {
           {portfolioItems.map((item, index) => (
             <div key={item.id} className="swiper-slide">
               <div className="overall-container flex gap-7">
-                <div className="w-[50%] h-[550px]">
+                <div className=" overall-container-firstImg w-[50%] h-[550px]">
                   <img
                     src={item.image_url}
                     alt={item.furniture_name || "Furniture image"}
@@ -164,24 +186,26 @@ const Portfolio = () => {
 
                 <div className="flex flex-col justify-between">
                   <div className="flex justify-between items-center">
-                    <p>{item.furniture_timeline || "Timeline not specified"}</p>
-                    <p>
+                    <p className="text-gray-600 text-sm lg:text-base leading-relaxed ">{item.furniture_timeline || "Timeline not specified"}</p>
+                    <p className="text-gray-600 text-sm lg:text-base leading-relaxed ">
                       {(index + 1).toString().padStart(2, "0")}/
                       {portfolioItems.length.toString().padStart(2, "0")}
                     </p>
                   </div>
 
-                  <div className="flex justify-between items-start gap-5">
+                  <div className="overall-container-Second flex justify-between items-start gap-5">
                     <div className="flex flex-col">
-                      <h2 className="text-2xl font-bold">
+                      <h2 className="text-2xl font-bold text-[#2b1d12]"  
+                      style={{
+              fontFamily: "'Cormorant Garamond', serif", }}>
                         {item.furniture_name || "Untitled Project"}
                       </h2>
-                      <p className="mt-2 max-w-md">
+                      <p className="mt-2 max-w-md text-gray-600 text-sm lg:text-base leading-relaxed ">
                         {item.furniture_description ||
                           "No description available"}
                       </p>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="overall-container-SecondImg flex flex-col items-center">
                       {item.image_url_2 && (
                         <div className="w-[300px] h-[360px]">
                           <img
@@ -198,15 +222,15 @@ const Portfolio = () => {
                           />
                         </div>
                       )}
-                      <p className="mt-2 text-sm">
+                      <p className="mt-2 text-gray-600 text-sm lg:text-base leading-relaxed ">
                         {item.mini_furniture_description || ""}
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex justify-between items-center">
-                    <p>{item.furniture_note || ""}</p>
-                    <div className="flex gap-3">
+                  <div className=" furniture-under flex justify-between items-center">
+                    <p className=" furniture-note text-gray-600 text-sm lg:text-base leading-relaxed ">{item.furniture_note || ""}</p>
+                    <div className="swiper-nav flex gap-3">
                       <div
                         className="custom-prev rounded-full w-12 h-12 border-2 border-black flex items-center justify-center cursor-pointer hover:bg-gray-100 transition-colors"
                         onClick={() => swiperInstance.current?.slidePrev()}
@@ -227,19 +251,6 @@ const Portfolio = () => {
           ))}
         </div>
 
-        {/* <div className="flex gap-3">
-                      <div className="swiper-button-prev rounded-full w-8 h-8 border-2 border-black border-b-amber-900 flex items-center justify-center cursor-pointer">
-                        &#8592;
-                      </div>
-                      <div className="swiper-button-next rounded-full w-8 h-8 border-2 border-black border-b-amber-900 flex items-center justify-center cursor-pointer">
-                        &#8594;
-                      </div>
-                    </div> */}
-
-        {/* <div className="swiper-pagination"></div>
-
-        <div className="swiper-button-next" style={{ display: 'none' }}></div>
-        <div className="swiper-button-prev" style={{ display: 'none' }}></div> */}
       </div>
     </section>
   );
