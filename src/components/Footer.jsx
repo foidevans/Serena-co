@@ -20,11 +20,12 @@ const Footer = () => {
   };
 
   return (
-    <footer data-scroll-section className=' bg-[#ece4ce] py-6 px-8 '>
+    <footer data-scroll-section className=' bg-[#f1e7d8] py-6 px-8 '>
 
-      <div className='flex justify-between'>
+      <div className='flex flex-col xl:flex-row lg:flex-row justify-between'>
         <div className='w-[20rem]'><h2>SERENA & CO</h2></div>
-        <div className='flex gap-5'>
+        
+        <div className='flex flex-col xl:flex-row lg:flex-row justify gap-5'>
           <div><p>MENU</p></div>
           <div>
             <ul className="">
@@ -35,7 +36,7 @@ const Footer = () => {
         </ul>
           </div>
         </div>
-          <div className='flex gap-5'>
+          <div className='flex flex-col xl:flex-row lg:flex-row justify gap-5'>
           <div><p>FOLLOW US</p></div>
           <div>
             <ul className="">
@@ -46,7 +47,7 @@ const Footer = () => {
         </ul>
           </div>
         </div>
-          <div className='flex gap-5'>
+          <div className='flex flex-col xl:flex-row lg:flex-row   gap-5'>
           <div><p>CONTACT</p></div>
           <div>
             <ul className="">
@@ -59,10 +60,8 @@ const Footer = () => {
         </div>
       </div>
       {/* Use the component */}
-      <InfiniteScrollText text="GET IN TOUCH" speed={15} />
-      
-      {/* Other footer content */}
-     
+      {/* <InfiniteScrollText text="GET IN TOUCH" speed={15} /> */}
+    
     </footer>
   );
 };

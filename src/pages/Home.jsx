@@ -49,7 +49,7 @@ const Home = () => {
       <main className="flex justify-center h-[calc(100vh-80px)] relative m-auto px-10 text-white">
         <div className="flex justify-center items-center relative">
           <motion.h1
-          className=" materialText text-4xl md:text-5xl lg:text-[5rem] xl:text-[5rem] font-semibold absolute -right-6 font-serif "
+          className=" materialText text-4xl md:text-5xl lg:text-[5rem] xl:text-[5rem] font-semibold absolute -right-8 xl:top-2/9 xl:right-[60%]   font-serif "
             initial={{ y: -80, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
@@ -61,7 +61,7 @@ const Home = () => {
             MATERIAL.
           </motion.h1>
 
-          <div className=" materialTextdeux absolute top-5/15 left-2/5">
+          <div className=" materialTextdeux absolute lg:top-[40%] md:top-[35%] xl:top-[40%] left-[50%]">
             <motion.h1
               className=" text-4xl md:text-5xl lg:text-[5rem] font-semibold font-serif"
               initial={{ y: 80, opacity: 0 }}

@@ -19,7 +19,7 @@ const Contact = () => {
       <div 
    
       
-        className="cover-slide-fast min-h-screen z-50 flex flex-col px-8 lg:px-15 "
+        className="cover-slide-fast flex flex-col px-8 lg:px-15 "
       >
         <div className="pt-15">
           <h2 className=" lg:text-sm md:text-sm text-[11px] tracking-[0.2em] text-gray-500 uppercase">
@@ -56,23 +56,23 @@ const Contact = () => {
             </button>
           </div>
 
-        <div className="formContainer  lg:w-[50%]">
+        <div className="formContainer  lg:w-[50%] xl:w-[50%]">
           <form noValidate onSubmit={handleSubmit}>
           <div className='flex flex-col gap-5'>
             <div className='border-b-2 border-b-black-500 border-b-solid pb-2'>
-               <input type="text" name="name" id="name" required  value={name} onChange={(e) => setName(e.targetvalue)} placeholder='Name'/>
+               <input type="text" name="name" id="name" required  value={name} onChange={(e) => setName(e.target.value)} placeholder='Name'/>
             </div>
-            <div className='lg:flex md:flex gap-4'>
+            <div className='flex flex-col lg:flex-row md:flex-row xl:flex-row gap-4'>
            <div className='border-b-2 border-b-black-500 border-b-solid w-full pb-2'>
-            <input type="number" name="phone" id="phone" required  value={phone} onChange={(e) => setPhone(e.targetvalue)} placeholder='Phone'/>
+            <input type="number" name="phone" id="phone" required  value={phone} onChange={(e) => setPhone(e.target.value)} placeholder='Phone'/>
             </div>
              <div className='border-b-2 border-b-black-500 border-b-solid w-full pb-2'>
-            <input type="email" name="email" id="email" required  value={email} onChange={(e) => setEmail(e.targetvalue)} placeholder='Email' />
+            <input type="email" name="email" id="email" required  value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email' />
             </div>
             </div>
-              <div className='border-2 border-black-500 border-solid pb-2'>
-    <textarea name="message" id="message" required  value={message} onChange={(e) => setMessage(e.targetvalue)} placeholder='message'  className='p-3 w-full min-h-[120px] resize-y'></textarea>
-  </div>
+              
+    <textarea name="message" id="message" required  value={message} onChange={(e) => setMessage(e.target.value)} placeholder='message'  className='p-3 w-full min-h-[120px] border-2 border-black-500 border-solid pb-2 resize-y'></textarea>
+  
 
             <button type="submit" className="self-start border-b-2 border-b-black-500 border-b-solid">SEND REQUEST  →</button>
             </div>

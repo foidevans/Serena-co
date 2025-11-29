@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 import img1 from '../assets/images/photo_5811932539768212676_y.jpg';
 import img2 from '../assets/images/photo_5811932539768212677_y.jpg';
 

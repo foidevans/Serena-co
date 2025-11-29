@@ -103,7 +103,6 @@ const Services = () => {
                   <img
                     src={designCards[0].image}
                     alt={designCards[0].name}
-                    srcset=""
                      className="w-full h-full object-cover"
                   />
                 </div>
@@ -121,7 +120,6 @@ const Services = () => {
                   <img
                     src={designCards[1].image}
                     alt={designCards[1].name}
-                    srcset=""
                      className="w-full h-full object-cover"
                   />
                 </div>
@@ -142,7 +140,6 @@ const Services = () => {
                   <img
                     src={designCards[2].image}
                     alt={designCards[2].name}
-                    srcset=""
                      className="w-full h-full object-cover"
                   />
                 </div>
@@ -162,7 +159,6 @@ const Services = () => {
                   <img
                     src={designCards[3].image}
                     alt={designCards[3].name}
-                    srcset=""
                      className="w-full h-full object-cover"
                   />
                 </div>
