@@ -72,7 +72,9 @@ src/
 git clone https://github.com/foidevans/Serena-co.git
 
 ### **2. Install dependencies**
+
 npm install
+
 
 ### **3. Set up environment variables**
 
@@ -87,11 +89,11 @@ VITE_EMAILJS_TEMPLATE_ID=your_template_id
 ## **4. Run the development server**
 npm run dev
 
+---
+
 📄 License
 This project is licensed under the MIT License.
 
 💛 Acknowledgements
 Designed and developed by Favour Evans
 Built with love using modern web technologies.
-
----
