@@ -32,7 +32,7 @@ const Footer = () => {
         <div className='flex flex-col gap-2 xl:flex-row lg:flex-row justify lg:gap-5 xl:gap-5'>
           <div><p className='text-gray-600 text-base leading-relaxed'>MENU</p></div>
           <div>
-            <ul className="text-xs">
+            <ul className="text-sm">
           <li><a href="#about" onClick={(e) => handleScroll(e, "#about")}>ABOUT US</a></li>
           <li><a href="#portfolio" onClick={(e) => handleScroll(e, "#portfolio")}>PORTFOLIO</a></li>
           <li><a href="#services" onClick={(e) => handleScroll(e, "#services")}>SERVICES</a></li>
@@ -43,7 +43,7 @@ const Footer = () => {
           <div className='flex flex-col gap-2 xl:flex-row lg:flex-row justify lg:gap-5 xl:gap-5'>
           <div><p className='text-gray-600 text-base leading-relaxed'>FOLLOW US</p></div>
           <div>
-            <ul className="text-xs">
+            <ul className="text-sm">
           <li><a href="#">INSTAGRAM</a></li>
           <li><a href="#">PINTEREST</a></li>
           <li><a href="#">BEHANCE</a></li>
@@ -54,7 +54,7 @@ const Footer = () => {
           <div className='flex flex-col gap-2 xl:flex-row lg:flex-row justify lg:gap-5 xl:gap-5'>
           <div><p className='text-gray-600 text-base leading-relaxed'>CONTACT</p></div>
           <div>
-            <ul className="text-xs">
+            <ul className="text-sm">
           <li>123 EMEYAL STREET, NEAR POLO CLUB GRA, PORT-HARCOURT, NIGERIA</li>
           <li>HELLO@SERENACO STUDIO</li>
           <li>+234 234 567 890</li>
