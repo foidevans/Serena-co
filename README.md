@@ -94,6 +94,6 @@ npm run dev
 📄 License
 This project is licensed under the MIT License.
 
-💛 Acknowledgements
-Designed and developed by Favour Evans
-Built with love using modern web technologies.
+💜 Acknowledgements
+Designed by Phenomenonstudio.co
+Developed by Favour Evans
