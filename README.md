@@ -1,16 +1,97 @@
-# React + Vite
+# Serena & Co — Interior Design Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Serena & Co is a boutique interior design website crafted to showcase refined, light-filled, emotionally resonant spaces. The site blends smooth motion, elegant typography, curated portfolio displays, and seamless navigation to reflect the brand’s sophisticated aesthetic.
 
-Currently, two official plugins are available:
+This project is built with **React 19**, **TailwindCSS 4**, **Framer Motion**, **Locomotive Scroll**, and **Supabase**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+## 📸 Website Preview
 
-## React Compiler
+Here is a preview of the Serena & Co interior design website:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Serena & Co Screenshot](./public/serena-co%20home-page.png)
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### **🌫️ Hero Spotlight Interaction**
+A dynamic landing page featuring:
+- Smooth spotlight movement on mouse hover  
+- Layered motion text animations  
+- A minimalist dark overlay for luxury ambience  
+
+### **🎞️ Smooth Page Transitions & Scroll**
+- Powered by **Locomotive Scroll**
+- Custom scrollTo behavior for routed navigation  
+- Animated section reveals  
+
+### **📸 Dynamic Portfolio Section**
+- Portfolio items fetched from **Supabase**
+- Fully responsive **Swiper.js** slider
+- Desktop and mobile-optimized layouts  
+- Image loading fallback and error handling included  
+
+### **📨 Contact Integration**
+- Email handling using **EmailJS**
+- Phone number formatting using **react-phone-number-input**
+
+### **📱 Responsive Navigation**
+- Desktop navbar with animated links  
+- Mobile hamburger menu using `hamburger-react`  
+- Framer Motion stagger and slide animations  
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Tools Used |
+|---------|------------|
+| **Framework** | React 19 + Vite |
+| **Styling** | TailwindCSS 4, SCSS |
+| **Animations** | Framer Motion, Locomotive Scroll |
+| **Database** | Supabase (REST API & Storage) |
+| **Slider** | Swiper.js |
+| **Forms** | EmailJS, React Phone Input |
+---
+
+## 📂 Folder Structure
+src/
+│── assets/ # Images, icons, static files
+│── components/ # Navbar, Footer
+│── pages/ # Home, Portfolio, Services, Journal, Contact
+│── supabase-client.js # Supabase configuration
+│── App.jsx / main.jsx # App entry
+│── index.css / App.scss # Global styling
+
+
+---
+
+## 🚀 Getting Started
+
+### **1. Clone the repository**
+```sh
+git clone https://github.com/foidevans/Serena-co.git
+
+### **2. Install dependencies**
+npm install
+
+### **3. Set up environment variables**
+
+Create a .env file:
+
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_KEY=your_supabase_anon_key
+VITE_EMAILJS_PUBLIC_KEY=your_emailjs_key
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+
+## **4. Run the development server**
+npm run dev
+
+📄 License
+This project is licensed under the MIT License.
+
+💛 Acknowledgements
+Designed and developed by Favour Evans
+Built with love using modern web technologies.
+
+---

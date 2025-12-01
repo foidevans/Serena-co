@@ -49,7 +49,7 @@ const Home = () => {
       <main className="flex justify-center h-[calc(100vh-80px)] relative m-auto px-10 text-white">
         <div className="flex justify-center items-center relative">
           <motion.h1
-          className=" materialText text-4xl md:text-5xl lg:text-[5rem] xl:text-[5rem] font-semibold absolute -right-8 xl:top-2/9 xl:right-[60%]   font-serif "
+            className=" materialText text-4xl md:text-5xl lg:text-[5rem] xl:text-[5rem] font-semibold absolute -right-8 xl:top-2/9 xl:right-[60%]   font-serif "
             initial={{ y: -80, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
@@ -112,9 +112,14 @@ const Home = () => {
                 </p>
                 <div className="flex justify-between pt-7">
                   <p className="text-xs sm:text-sm font-semibold">
-                    <a href="#contact" onClick={(e) => handleScroll(e, "#contact")}>GET IN TOUCH</a>
+                    <a
+                      href="#contact"
+                      onClick={(e) => handleScroll(e, "#contact")}
+                    >
+                      GET IN TOUCH
+                    </a>
                   </p>
-               
+
                   <span>&#8594;</span>
                 </div>
 

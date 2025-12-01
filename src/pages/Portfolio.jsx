@@ -67,28 +67,28 @@ const Portfolio = () => {
             },
             modules: [Navigation, Pagination],
             breakpoints: {
-    // Mobile (default above, but you can also define it here)
-    320: {
-      slidesPerView: 1.1,
-      spaceBetween: 15,
-    },
-    // Tablets
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 30,
-    }, 
+              // Mobile
+              320: {
+                slidesPerView: 1.1,
+                spaceBetween: 15,
+              },
+              // Tablets
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+              },
 
-        // Desktop
-    1024: {
-      slidesPerView: 1,
-      spaceBetween: 30,
-    },
-    // Large desktop
-    1280: {
-      slidesPerView: 1,
-      spaceBetween: 30,
-    },}
-
+              // Desktop
+              1024: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+              },
+              // Large desktop
+              1280: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+              },
+            },
           });
 
           swiperInstance.current.update();
@@ -138,31 +138,30 @@ const Portfolio = () => {
     <section
       id="portfolio"
       data-scroll-section
-      // data-scroll
-      // data-scroll-sticky
-      // data-scroll-target="#services"
-
       className=" relative min-h-screen bg-white text-black px-6 py-6"
-      // style={{ position: 'sticky', top: 0 }}
     >
       <div className="mb-5">
         <h2 className="  lg:text-sm md:text-sm text-[11px] text-center tracking-[0.2em] text-gray-500 uppercase">
           PORTFOLIO
         </h2>
-        <h1 className=" xl:text-[4rem] lg:text-[4rem] md:text-[4rem] text-[2.8rem] text-center font-serif text-[#2b1d12] leading-tight mt-4"   style={{
-              fontFamily: "'Cormorant Garamond', serif",
-              letterSpacing: "-2px"
-            }}>
-              
-          IMPRESSIONS THAT  <span
-                style={{
-                  fontFamily: "'My Soul', cursive",
-                
-                  fontWeight: "lighter",
-                }}
-              >
-                E 
-              </span>NDURE
+        <h1
+          className=" xl:text-[4rem] lg:text-[4rem] md:text-[4rem] text-[2.8rem] text-center font-serif text-[#2b1d12] leading-tight mt-4"
+          style={{
+            fontFamily: "'Cormorant Garamond', serif",
+            letterSpacing: "-2px",
+          }}
+        >
+          IMPRESSIONS THAT{" "}
+          <span
+            style={{
+              fontFamily: "'My Soul', cursive",
+
+              fontWeight: "lighter",
+            }}
+          >
+            E
+          </span>
+          NDURE
         </h1>
       </div>
 
@@ -186,7 +185,9 @@ const Portfolio = () => {
 
                 <div className="flex flex-col justify-between">
                   <div className="flex justify-between items-center">
-                    <p className="text-gray-600 text-sm lg:text-base md:text-base xl:text-base leading-6">{item.furniture_timeline || "Timeline not specified"}</p>
+                    <p className="text-gray-600 text-sm lg:text-base md:text-base xl:text-base leading-6">
+                      {item.furniture_timeline || "Timeline not specified"}
+                    </p>
                     <p className="text-gray-600 text-sm lg:text-base leading-relaxed ">
                       {(index + 1).toString().padStart(2, "0")}/
                       {portfolioItems.length.toString().padStart(2, "0")}
@@ -195,9 +196,12 @@ const Portfolio = () => {
 
                   <div className="overall-container-Second flex justify-between items-start gap-5">
                     <div className="flex flex-col">
-                      <h2 className="text-2xl font-bold text-[#2b1d12]"  
-                      style={{
-              fontFamily: "'Cormorant Garamond', serif", }}>
+                      <h2
+                        className="text-2xl font-bold text-[#2b1d12]"
+                        style={{
+                          fontFamily: "'Cormorant Garamond', serif",
+                        }}
+                      >
                         {item.furniture_name || "Untitled Project"}
                       </h2>
                       <p className="mt-2 max-w-md text-gray-600 text-sm lg:text-base md:text-base xl:text-base leading-6 ">
@@ -229,16 +233,18 @@ const Portfolio = () => {
                   </div>
 
                   <div className=" furniture-under flex justify-between items-center">
-                    <p className=" furniture-note text-gray-600 text-sm lg:text-base leading-relaxed ">{item.furniture_note || ""}</p>
+                    <p className=" furniture-note text-gray-600 text-sm lg:text-base leading-relaxed ">
+                      {item.furniture_note || ""}
+                    </p>
                     <div className="swiper-nav flex gap-3">
                       <div
-                        className="custom-prev rounded-full w-12 h-12 border-2 border-black flex items-center justify-center cursor-pointer hover:bg-gray-100 transition-colors"
+                        className="custom-prev rounded-full w-10 h-10 border-2 border-black flex items-center justify-center cursor-pointer hover:bg-gray-100 transition-colors"
                         onClick={() => swiperInstance.current?.slidePrev()}
                       >
                         &#8592;
                       </div>
                       <div
-                        className="custom-next rounded-full w-12 h-12 border-2 border-black flex items-center justify-center cursor-pointer hover:bg-gray-100 transition-colors"
+                        className="custom-next rounded-full w-10 h-10 border-2 border-black flex items-center justify-center cursor-pointer hover:bg-gray-100 transition-colors"
                         onClick={() => swiperInstance.current?.slideNext()}
                       >
                         &#8594;
@@ -250,7 +256,6 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

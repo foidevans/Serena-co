@@ -1,54 +1,38 @@
-
-
-
-// html.has-scroll-smooth {
-//   overflow: hidden;
-// }
-
 html.has-scroll-dragging {
   user-select: none;
 }
-
-// .has-scroll-smooth body {
-//   overflow: hidden;
-// }
 
 .has-scroll-smooth [data-scroll-container] {
   min-height: 100vh;
 }
 
-// Cover scroll specific styles
 .cover-scroll-section {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  
+
   .cover-section {
-  position: relative;
-  min-height: 100vh;
-  z-index: 10;
-}
-  // This is the element that will cover the previous section
+    position: relative;
+    min-height: 100vh;
+    z-index: 10;
+  }
+
   .cover-element {
     position: relative;
     z-index: 10;
-    background: white; // or your desired background
+    background: white;
     min-height: 100vh;
-    
+
     &[data-scroll] {
       will-change: transform;
     }
   }
 }
 
-
-// Reset the home section to be non-sticky
 .home-section {
   position: relative;
   z-index: 1;
 }
-
-
 
 .swiper-button-next-custom,
 .swiper-button-prev-custom {
@@ -56,54 +40,6 @@ html.has-scroll-dragging {
   transform: none !important;
   margin: 0 !important;
 }
-// // Stacking Scroll Effect
-// .stack-container {
-//   position: relative;
-// }
-
-// .stack-section {
-//   height: 100vh;
-//   display: flex;
-//   align-items: center;
-//   padding: 60px 40px;
-// }
-
-// // Sections that get covered (sticky)
-// .sticky-section {
-//   position: sticky;
-//   top: 0;
-// }
-
-// // Sections that do the covering (normal flow)
-// .cover-section {
-//   position: relative;
-//   z-index: 10;
-// }
-
-// // Spacer between sticky and cover sections
-// .stack-spacer {
-//   height: 100vh;
-// }
-
-// // Your existing content styles
-// .section-content {
-//   width: 100%;
-//   color: white;
-//   position: relative;
-// }
-
-
-// // Custom scrollbar (optional)
-// .has-scroll-smooth {
-//   .c-scrollbar {
-//     width: 6px;
-    
-//     .c-scrollbar_thumb {
-//       background: linear-gradient(to bottom, #667eea, #764ba2);
-//       opacity: 0.8;
-//     }
-//   }
-// }
 
 .phoneInputCustom {
   width: 100%;
@@ -114,88 +50,65 @@ html.has-scroll-dragging {
   border: none;
   outline: none;
   font-size: 1rem;
-  padding: 0;         
+  padding: 0;
   background: transparent;
 }
 
-
-@media (max-width: 768px)  {
- .overall-container {
-  flex-direction: column;
- }
- .overall-container-firstImg {
-  width: 100%;
-  height: 300px;
- }
- .overall-container-Second {
-  flex-direction: column;
- }
- .overall-container-SecondImg {
-  display: none;
- }
- .furniture-note, .furniture-under{
-  display: none;
- }
- .materialTextdeux {
-  position: absolute;
+@media (max-width: 768px) {
+  .overall-container {
+    flex-direction: column;
+  }
+  .overall-container-firstImg {
+    width: 100%;
+    height: 300px;
+  }
+  .overall-container-Second {
+    flex-direction: column;
+  }
+  .overall-container-SecondImg {
+    display: none;
+  }
+  .furniture-note,
+  .furniture-under {
+    display: none;
+  }
+  .materialTextdeux {
+    position: absolute;
     top: 40%;
     left: 50%;
-    transform: translateX(-50%); 
- }
+    transform: translateX(-50%);
+  }
 
- .materialText {
+  .materialText {
     top: 33%;
-  //  transform: translateX(-50%); 
- }
+  }
 
-.service-container {
-  flex-direction: column;
-}
-
-.service-div {
-  flex-direction: column;
-  align-items: center;
-    width: 100%;
-}
-
-.service-text {
-  display: none;
-}
-
-.service-div-container {
-  align-items: center;
-    width: 100%;
-}
-
-.contact-container {
-  flex-direction: column;
-}
-
-
-//  .swiper-nav {
-//   justify-items: flex-end;
-//  }
-}
-
-/* Tablets and small laptops (769px - 1024px) */
-@media (min-width: 769px) {
   .service-container {
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
+    flex-direction: column;
+  }
+
+  .service-div {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .service-text {
+    display: none;
+  }
+
+  .service-div-container {
+    align-items: center;
+    width: 100%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
 }
 
-// .service-text {
-//   position: absolute;
-//   right: 0;
-//   left: 0;
-
-// }
-
-
- .materialText {
+@media (min-width: 769px) {
+  .materialText {
     top: 30%;
-  //  transform: translateX(-50%); 
- }
-
+  }
 }
