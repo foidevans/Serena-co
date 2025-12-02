@@ -94,7 +94,7 @@ npm run dev
 📄 License
 This project is licensed under the MIT License.
 
-## 💜 Acknowledgements
+💜 Acknowledgements
 
 Design credit: Phenomenal Studio (Dribbble)  
 Development: Favour Evans
